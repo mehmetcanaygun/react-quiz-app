@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import Navbar from "./components/layout/Navbar";
+import Categories from "./components/quiz/Categories";
 import Quiz from "./components/quiz/Quiz";
+import Footer from "./components/layout/Footer";
+import QuizState from "./context/QuizState";
 
 import "./css/App.css";
-import "./css/bootstrap.min.css";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Quiz />
-    </div>
+    <QuizState>
+      <div className="App">
+        <Navbar />
+        <Categories />
+        <Quiz />
+        <Footer />
+      </div>
+    </QuizState>
   );
 }
 
