@@ -1,7 +1,8 @@
 [
   {
-    "category": "Books",
+    "category": "Book",
     "categoryId": "0001",
+    "categoryImg": "./data/book.jpg",
     "questions": [
       {
         "question": "Who wrote &quot;Harry Potter&quot;?",
@@ -90,6 +91,7 @@
   {
     "category": "Film",
     "categoryId": "0002",
+    "categoryImg": "./data/film.jpg",
     "questions": [
       {
         "question": "Who starred in the film 1973 movie &quot;Enter The Dragon&quot;?",
@@ -162,6 +164,7 @@
   {
     "category": "Music",
     "categoryId": "0003",
+    "categoryImg": "./data/music.jpg",
     "questions": [
       {
         "question": "Who wrote the Sinead O`Connor hit &#039;Nothing Compares 2 U&#039;?",
@@ -226,6 +229,7 @@
   {
     "category": "Television",
     "categoryId": "0004",
+    "categoryImg": "./data/television.jpg",
     "questions": [
       {
         "question": "What was the name of the police officer in the cartoon &quot;Top Cat&quot;?",
@@ -294,6 +298,7 @@
   {
     "category": "Video Games",
     "categoryId": "0005",
+    "categoryImg": "./data/videogame.jpg",
     "questions": [
       {
         "question": "What year was the game Team Fortress 2 released?",

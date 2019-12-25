@@ -13,6 +13,11 @@ export default (state, action) => {
         categories: action.payload,
         loading: false
       };
+    case GET_QUESTIONS:
+      return {
+        ...state,
+        category: action.payload
+      };
     case SET_LOADING:
       return {
         ...state,

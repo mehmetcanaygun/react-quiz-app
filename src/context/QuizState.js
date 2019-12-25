@@ -12,6 +12,7 @@ import {
 const QuizState = props => {
   const initialState = {
     categories: [],
+    category: null,
     questions: [],
     currentQuestion: {},
     wrong: [],
@@ -26,10 +27,22 @@ const QuizState = props => {
     setLoading();
 
     const res = await axios.get("./data/questions.json");
-
+    // console.log(res.data);
     dispatch({
       type: GET_CATEGORIES,
       payload: res.data
+    });
+  };
+
+  // Get questions
+  const getQuestions = id => {
+    state.categories.forEach(cat => {
+      if (cat.categoryId === id) {
+        dispatch({
+          type: GET_QUESTIONS,
+          payload: cat
+        });
+      }
     });
   };
 
@@ -44,12 +57,14 @@ const QuizState = props => {
     <QuizContext.Provider
       value={{
         categories: state.categories,
+        category: state.category,
         questions: state.questions,
         currentQuestion: state.currentQuestion,
         wrong: state.wrong,
         time: state.time,
         loading: state.loading,
         getCategories,
+        getQuestions,
         setLoading
       }}
     >
