@@ -17,10 +17,9 @@ function App() {
         <div className="App">
           <Navbar />
           <Switch>
-            <Route exact path="/" component={Home} />
             <Route exact path="/quiz/:category" component={Quiz} />
             <Route exact path="/result" component={Result} />
-            <Route component={NotFound} />
+            <Route component={Home} />
           </Switch>
           <Footer />
         </div>
