@@ -24,7 +24,9 @@ const Answers = () => {
               key={index}
               className="quiz__answer shadow"
               onClick={() => {
-                nextQuestion();
+                setTimeout(function() {
+                  nextQuestion();
+                }, 200);
               }}
             >
               {correct_answer}
@@ -34,8 +36,10 @@ const Answers = () => {
               key={index}
               className="quiz__answer shadow"
               onClick={() => {
-                nextQuestion();
-                countWrong(currentQuestion);
+                setTimeout(function() {
+                  nextQuestion();
+                  countWrong(currentQuestion);
+                }, 200);
               }}
             >
               {incorrect_answers && incorrect_answers[item - 1]}

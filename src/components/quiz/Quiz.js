@@ -46,7 +46,8 @@ const Quiz = ({ match }) => {
               .replace(/&quot;/g, `"`)
               .replace(/&amp;/, `&`)
               .replace(/&eacute;/, `é`)
-              .replace(/&Uuml;/, `Ü`)}
+              .replace(/&Uuml;/, `Ü`)
+              .replace(/&shy;/, `-`)}
         </p>
         <Answers />
       </div>
