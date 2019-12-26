@@ -14,7 +14,7 @@ const Result = () => {
       <p className="shadow">
         <span
           style={{
-            color: wrong.length > 5 ? "#803434" : "#4da341"
+            color: wrong.length > 4 ? "#803434" : "#4da341"
           }}
         >
           {10 - wrong.length}

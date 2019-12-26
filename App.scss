@@ -119,6 +119,7 @@ body {
       height: 10px;
       background-color: $primary-color;
       border-radius: 5px;
+      transition: width 0.1s ease-in-out;
     }
   }
 
@@ -137,12 +138,9 @@ body {
     color: #fff;
   }
 
-  .quiz__answer:active {
-    animation: colorChange 0.2s ease-in-out;
-  }
-
   .quiz__answer:focus {
     outline: none;
+    animation: colorChange 0.2s ease-in-out;
   }
 }
 
@@ -212,6 +210,32 @@ body {
   }
 }
 
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .not-found__bg {
+    img {
+      width: 300px;
+      filter: blur(3px);
+      -webkit-filter: blur(3px);
+    }
+  }
+
+  p {
+    position: absolute;
+    top: 160px;
+    left: calc(50% - 80px);
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #000;
+    width: 160px;
+    color: $primary-color;
+  }
+}
+
 .footer {
   width: 100%;
   height: $footer-height;
@@ -258,5 +282,29 @@ body {
   }
   100% {
     background-color: $primary-color;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+    .categories__title {
+      display: none;
+    }
+
+    .categories__item {
+      margin: 1rem;
+      font-size: 3rem;
+      height: 10rem;
+    }
+
+    .categories__item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 5px 20px 2px #000;
+      transition: all 0.2s ease-in-out;
+    }
   }
 }
