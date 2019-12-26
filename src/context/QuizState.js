@@ -2,47 +2,43 @@ import React, { useReducer } from "react";
 import QuizContext from "./quizContext";
 import QuizReducer from "./quizReducer";
 import axios from "axios";
-import {
-  GET_CATEGORIES,
-  GET_QUESTIONS,
-  NEXT_QUESTION,
-  SET_LOADING
-} from "./types";
+import { GET_QUESTIONS, SET_CURRENT, SET_LOADING } from "./types";
 
 const QuizState = props => {
   const initialState = {
-    categories: [],
-    category: null,
     questions: [],
     currentQuestion: {},
+    currentIndex: 0,
     wrong: [],
-    time: 0,
     loading: false
   };
 
   const [state, dispatch] = useReducer(QuizReducer, initialState);
 
-  // Get categories
-  const getCategories = async () => {
+  // Get questions
+  const getQuestions = async id => {
     setLoading();
 
-    const res = await axios.get("./data/questions.json");
-    // console.log(res.data);
+    const res = await axios.get(
+      `https://opentdb.com/api.php?amount=10&category=${id}&difficulty=easy&type=multiple`
+    );
+
+    // res.data.results.forEach(result => {
+    //   console.log(result, state.questionIndex);
+    // });
+
     dispatch({
-      type: GET_CATEGORIES,
-      payload: res.data
+      type: GET_QUESTIONS,
+      payload: res.data.results
     });
+
+    setQuestion();
   };
 
-  // Get questions
-  const getQuestions = id => {
-    state.categories.forEach(cat => {
-      if (cat.categoryId === id) {
-        dispatch({
-          type: GET_QUESTIONS,
-          payload: cat
-        });
-      }
+  // Set current question
+  const setQuestion = () => {
+    dispatch({
+      type: SET_CURRENT
     });
   };
 
@@ -56,15 +52,13 @@ const QuizState = props => {
   return (
     <QuizContext.Provider
       value={{
-        categories: state.categories,
-        category: state.category,
         questions: state.questions,
         currentQuestion: state.currentQuestion,
+        currentIndex: state.currentIndex,
         wrong: state.wrong,
-        time: state.time,
         loading: state.loading,
-        getCategories,
         getQuestions,
+        setQuestion,
         setLoading
       }}
     >

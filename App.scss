@@ -62,12 +62,14 @@ body {
   }
 
   .categories__item {
+    text-transform: capitalize;
     width: 85%;
     height: 6rem;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
+    text-decoration: none;
     font-size: 3.5rem;
     border: 0;
     border-radius: 5px;
@@ -78,7 +80,30 @@ body {
 }
 
 .quiz {
-  display: none;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  .quiz__category {
+    color: $primary-color;
+  }
+
+  .quiz__question {
+    font-size: 2.5rem;
+    margin: 1rem 0 3rem 0;
+  }
+
+  .quiz__answer {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    border: 0;
+    background-color: $primary-color;
+    color: #fff;
+  }
 }
 
 .footer {

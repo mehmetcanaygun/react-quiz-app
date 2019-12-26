@@ -1,24 +1,16 @@
-import React, { useContext } from "react";
+import React from "react";
 import PropTypes from "prop-types";
-import QuizContext from "../../context/quizContext";
+import { Link } from "react-router-dom";
 
-const CategoryItem = cat => {
-  const quizContext = useContext(QuizContext);
-  const { getQuestions } = quizContext;
-
+const CategoryItem = ({ category: { name, id, img } }) => {
   return (
-    <button
+    <Link
+      to={`/quiz/${id}`}
       className="categories__item shadow"
-      onClick={() => {
-        getQuestions(cat.cat.categoryId);
-      }}
-      style={{
-        backgroundImage: `url(${cat.cat.categoryImg})`,
-        backgroundSize: "cover"
-      }}
+      style={{ backgroundImage: `url(${img})`, backgroundSize: "cover" }}
     >
-      {cat.cat.category}
-    </button>
+      {name}
+    </Link>
   );
 };
 

@@ -1,4 +1,3 @@
-export const GET_CATEGORIES = "GET_CATEGORIES";
 export const GET_QUESTIONS = "GET_QUESTIONS";
-export const NEXT_QUESTION = "NEXT_QUESTION";
 export const SET_LOADING = "SET_LOADING";
+export const SET_CURRENT = "SET_CURRENT";

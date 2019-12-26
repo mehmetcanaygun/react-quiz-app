@@ -1,11 +1,11 @@
 [
   {
-    "category": "Book",
+    "category": "book",
     "categoryId": "0001",
     "categoryImg": "./data/book.jpg",
     "questions": [
       {
-        "question": "Who wrote &quot;Harry Potter&quot;?",
+        "question": "Who wrote 'Harry Potter'?",
         "correct_answer": "J.K. Rowling",
         "incorrect_answers": [
           "J.R.R. Tolkien",
@@ -14,7 +14,7 @@
         ]
       },
       {
-        "question": "Which famous book is sub-titled &#039;The Modern Prometheus&#039;?",
+        "question": "Which famous book is sub-titled 'The Modern Prometheus'?",
         "correct_answer": "Frankenstein",
         "incorrect_answers": [
           "Dracula",
@@ -23,26 +23,26 @@
         ]
       },
       {
-        "question": "Which of the following is the world&#039;s best-selling book?",
+        "question": "Which of the following is the world's best-selling book?",
         "correct_answer": "The Lord of the Rings",
         "incorrect_answers": [
           "The Little Prince",
-          "Harry Potter and the Philosopher&#039;s Stone",
+          "Harry Potter and the Philosopher's Stone",
           "The Da Vinci Code"
         ]
       },
       {
-        "question": "&quot;Green Eggs And Ham&quot; is a book by which author?",
+        "question": "'Green Eggs And Ham' is a book by which author?",
         "correct_answer": "Dr. Seuss",
         "incorrect_answers": ["Beatrix Potter", "Roald Dahl", "A.A. Milne"]
       },
       {
-        "question": "Which famous spy novelist wrote the childrens&#039; story &quot;Chitty-Chitty-Bang-Bang&quot;?",
+        "question": "Which famous spy novelist wrote the childrens' story 'Chitty-Chitty-Bang-Bang'?",
         "correct_answer": "Ian Fleming",
         "incorrect_answers": ["Joseph Conrad", "John Buchan", "Graham Greene"]
       },
       {
-        "question": "What is the name of the protagonist of J.D. Salinger&#039;s novel Catcher in the Rye?",
+        "question": "What is the name of the protagonist of J.D. Salinger's novel Catcher in the Rye?",
         "correct_answer": "Holden Caulfield",
         "incorrect_answers": [
           "Fletcher Christian",
@@ -51,7 +51,7 @@
         ]
       },
       {
-        "question": "What&#039;s the second book in George R. R. Martin&#039;s &#039;A Song of Ice and Fire&#039; series?",
+        "question": "What's the second book in George R. R. Martin's 'A Song of Ice and Fire' series?",
         "correct_answer": "A Clash of Kings",
         "incorrect_answers": [
           "A Dance with Dragons",
@@ -60,7 +60,7 @@
         ]
       },
       {
-        "question": "In the name of the fictional SCP Foundation, what does the &quot;SCP&quot; stand for?",
+        "question": "In the name of the fictional SCP Foundation, what does the 'SCP' stand for?",
         "correct_answer": "Special Containment Procedures",
         "incorrect_answers": [
           "Secure, Contain, Protect",
@@ -89,22 +89,22 @@
     ]
   },
   {
-    "category": "Film",
+    "category": "film",
     "categoryId": "0002",
     "categoryImg": "./data/film.jpg",
     "questions": [
       {
-        "question": "Who starred in the film 1973 movie &quot;Enter The Dragon&quot;?",
+        "question": "Who starred in the film 1973 movie 'Enter The Dragon'?",
         "correct_answer": "Bruce Lee",
         "incorrect_answers": ["Jackie Chan", "Jet Li", " Yun-Fat Chow"]
       },
       {
-        "question": "This movie contains the quote, &quot;Houston, we have a problem.&quot;",
+        "question": "This movie contains the quote, 'Houston, we have a problem.'",
         "correct_answer": "Apollo 13",
         "incorrect_answers": ["The Right Stuff", "Capricorn One", "Marooned"]
       },
       {
-        "question": "This movie contains the quote, &quot;I feel the need ... the need for speed!&quot;",
+        "question": "This movie contains the quote, 'I feel the need ... the need for speed!'",
         "correct_answer": "Top Gun",
         "incorrect_answers": [
           "Days of Thunder",
@@ -113,7 +113,7 @@
         ]
       },
       {
-        "question": "What is the orange and white bot&#039;s name in &quot;Star Wars: The Force Awakens&quot;?",
+        "question": "What is the orange and white bot's name in 'Star Wars: The Force Awakens'?",
         "correct_answer": "BB-8",
         "incorrect_answers": ["BB-3", "AA-A", "R2-D2"]
       },
@@ -123,7 +123,7 @@
         "incorrect_answers": ["Tron: Legacy", "The Giver", "True Grit"]
       },
       {
-        "question": "At the end of the 2001 film &quot;Rat Race&quot;, whose concert do the contestants crash?",
+        "question": "At the end of the 2001 film 'Rat Race', whose concert do the contestants crash?",
         "correct_answer": "Smash Mouth",
         "incorrect_answers": ["Bowling for Soup", "Sum 41", "Linkin Park"]
       },
@@ -142,7 +142,7 @@
         "incorrect_answers": ["Tron", "Lion king", "101 Dalmatians"]
       },
       {
-        "question": "In which film does Humphrey Bogart say the famous line, &quot;Here&#039;s looking at you, kid&quot;?",
+        "question": "In which film does Humphrey Bogart say the famous line, 'Here's looking at you, kid'?",
         "correct_answer": "Casablanca",
         "incorrect_answers": [
           "The Maltese Falcon",
@@ -151,7 +151,7 @@
         ]
       },
       {
-        "question": "In &quot;ALF&quot;, what was ALF&#039;s real name?",
+        "question": "In 'ALF', what was ALF's real name?",
         "correct_answer": "Gordon Shumway",
         "incorrect_answers": [
           "Gordon Milipp",
@@ -162,17 +162,17 @@
     ]
   },
   {
-    "category": "Music",
+    "category": "music",
     "categoryId": "0003",
     "categoryImg": "./data/music.jpg",
     "questions": [
       {
-        "question": "Who wrote the Sinead O`Connor hit &#039;Nothing Compares 2 U&#039;?",
+        "question": "Who wrote the Sinead O`Connor hit 'Nothing Compares 2 U'?",
         "correct_answer": "Prince",
         "incorrect_answers": ["Michael Jackson", "Cameo", "Rick James"]
       },
       {
-        "question": "Which rap group released the album &quot;Straight Outta Compton&quot;?",
+        "question": "Which rap group released the album 'Straight Outta Compton'?",
         "correct_answer": "N.W.A",
         "incorrect_answers": ["Wu-Tang Clan", "Run-D.M.C.", "Beastie Boys"]
       },
@@ -191,12 +191,12 @@
         ]
       },
       {
-        "question": "Which artist released the 2012 single &quot;Harlem Shake&quot;, which was used in numerous YouTube videos in 2013?",
+        "question": "Which artist released the 2012 single 'Harlem Shake', which was used in numerous YouTube videos in 2013?",
         "correct_answer": "Baauer",
         "incorrect_answers": ["RL Grime", "NGHTMRE", "Flosstradamus"]
       },
       {
-        "question": "The &quot;K&quot; in &quot;K-Pop&quot; stands for which word?",
+        "question": "The 'K' in 'K-Pop' stands for which word?",
         "correct_answer": "Korean",
         "incorrect_answers": ["Kenyan", "Kazakhstan", "Kuwaiti"]
       },
@@ -206,12 +206,12 @@
         "incorrect_answers": ["Scream", "Yell", "Shriek"]
       },
       {
-        "question": "Which band released songs suchs as &quot;Rio&quot;, &quot;Girls on Film&quot;, and &quot;The Reflex&quot;?",
+        "question": "Which band released songs suchs as 'Rio', 'Girls on Film', and 'The Reflex'?",
         "correct_answer": "Duran Duran",
         "incorrect_answers": ["The Cure", "New Order", "Depeche Mode"]
       },
       {
-        "question": "Who was featured in the song &quot;Words&quot; by Feint? ",
+        "question": "Who was featured in the song 'Words' by Feint? ",
         "correct_answer": "Laura Brehm",
         "incorrect_answers": ["Anna Yvette ", "Danyka Nadeau", "Veela"]
       },
@@ -227,27 +227,27 @@
     ]
   },
   {
-    "category": "Television",
+    "category": "television",
     "categoryId": "0004",
     "categoryImg": "./data/television.jpg",
     "questions": [
       {
-        "question": "What was the name of the police officer in the cartoon &quot;Top Cat&quot;?",
+        "question": "What was the name of the police officer in the cartoon 'Top Cat'?",
         "correct_answer": "Dibble",
         "incorrect_answers": ["Barbrady", "Mahoney", "Murphy"]
       },
       {
-        "question": "Which character was played by Dustin Diamond in the sitcom &#039;Saved by the Bell&#039;?",
+        "question": "Which character was played by Dustin Diamond in the sitcom 'Saved by the Bell'?",
         "correct_answer": "Screech",
         "incorrect_answers": ["Zack", "Mr. Belding", "A.C. Slater"]
       },
       {
-        "question": "In the original Star Trek TV series, what was Captain James T. Kirk&#039;s middle name?",
+        "question": "In the original Star Trek TV series, what was Captain James T. Kirk's middle name?",
         "correct_answer": "Tiberius",
         "incorrect_answers": ["Trevor", "Travis", "Tyrone"]
       },
       {
-        "question": "In Game of Thrones, what is Littlefinger&#039;s real name?",
+        "question": "In Game of Thrones, what is Littlefinger's real name?",
         "correct_answer": "Petyr Baelish",
         "incorrect_answers": [
           "Podrick Payne",
@@ -256,7 +256,7 @@
         ]
       },
       {
-        "question": "Which show is known for the songs &quot;You are a Pirate&quot;, &quot;Cooking by the Book&quot; and &quot;We Are Number One&quot;?",
+        "question": "Which show is known for the songs 'You are a Pirate', 'Cooking by the Book' and 'We Are Number One'?",
         "correct_answer": "LazyTown",
         "incorrect_answers": ["Sofia the First", "DuckTales", "Tom and Jerry"]
       },
@@ -265,17 +265,17 @@
         "correct_answer": "Stitch!",
         "incorrect_answers": [
           "Cory in the House",
-          "The Emperor&#039;s New School",
+          "The Emperor's New School",
           "Hannah Montana"
         ]
       },
       {
-        "question": "How many seasons did the Sci-Fi television show &quot;Stargate Atlantis&quot; have?",
+        "question": "How many seasons did the Sci-Fi television show 'Stargate Atlantis' have?",
         "correct_answer": "5",
         "incorrect_answers": ["10", "2", "7"]
       },
       {
-        "question": "How many seasons did the Sci-Fi television show &quot;Stargate Universe&quot; have?",
+        "question": "How many seasons did the Sci-Fi television show 'Stargate Universe' have?",
         "correct_answer": "2",
         "incorrect_answers": ["10", "5", "3"]
       },
@@ -285,7 +285,7 @@
         "incorrect_answers": ["Frasier", "Becker", "Friends"]
       },
       {
-        "question": "The HBO series &quot;Game of Thrones&quot; is based on which series of books?",
+        "question": "The HBO series 'Game of Thrones' is based on which series of books?",
         "correct_answer": "A Song of Ice and Fire",
         "incorrect_answers": [
           "The Wheel of Time",
@@ -296,7 +296,7 @@
     ]
   },
   {
-    "category": "Video Games",
+    "category": "videogames",
     "categoryId": "0005",
     "categoryImg": "./data/videogame.jpg",
     "questions": [
@@ -311,12 +311,12 @@
         "incorrect_answers": ["Health Potion", "Orange Juice", "Ashen Flask"]
       },
       {
-        "question": "In the &quot;Worms&quot; series of video games, which of these weapons is affected by wind?",
+        "question": "In the 'Worms' series of video games, which of these weapons is affected by wind?",
         "correct_answer": "Bazooka",
         "incorrect_answers": ["Grenade", "Air Strike", "Mortar"]
       },
       {
-        "question": "What year did the game &quot;Overwatch&quot; enter closed beta?",
+        "question": "What year did the game 'Overwatch' enter closed beta?",
         "correct_answer": "2015",
         "incorrect_answers": ["2013", "2011", "2016"]
       },
@@ -345,20 +345,20 @@
       },
       {
         "question": "Which Kirby game first introduced Copy Abilities?",
-        "correct_answer": "Kirby&#039;s Adventure",
+        "correct_answer": "Kirby's Adventure",
         "incorrect_answers": [
           "Kirby Super Star",
-          "Kirby&#039;s Dream Land 2",
-          "Kirby&#039;s Dream Land"
+          "Kirby's Dream Land 2",
+          "Kirby's Dream Land"
         ]
       },
       {
-        "question": "Which &quot;Call Of Duty: Zombies&quot; map introduced the &quot;Staffs Of The Ancients&quot;?",
+        "question": "Which 'Call Of Duty: Zombies' map introduced the 'Staffs Of The Ancients'?",
         "correct_answer": "Origins",
         "incorrect_answers": ["Shangri-La", "Revelations", "Nuketown"]
       },
       {
-        "question": "In &quot;PUBATTLEGROUNDS&quot; which ammo type does the M24 use?",
+        "question": "In 'PUBATTLEGROUNDS' which ammo type does the M24 use?",
         "correct_answer": "7.62mm",
         "incorrect_answers": ["5.56mm", "9mm", ".300 Magnum"]
       }

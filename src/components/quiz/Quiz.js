@@ -1,16 +1,37 @@
-import React, { useContext } from "react";
-import Question from "./Question";
+import React, { useContext, useEffect } from "react";
+import Spinner from "../layout/Spinner";
 import QuizContext from "../../context/quizContext";
+import Answers from "./Answers";
 
-const Quiz = () => {
+const Quiz = ({ match }) => {
   const quizContext = useContext(QuizContext);
-  const { category } = quizContext;
+  const { getQuestions, currentQuestion, currentIndex, loading } = quizContext;
 
-  return (
-    <div className="quiz container" style={category && { display: "block" }}>
-      <Question />
-    </div>
-  );
+  useEffect(() => {
+    getQuestions(match.params.category);
+    // eslint-disable-next-line
+  }, []);
+
+  const { category, question } = currentQuestion;
+
+  if (loading) {
+    return <Spinner />;
+  } else {
+    return (
+      <div className="quiz">
+        <p className="quiz__category">{category}</p>
+        <p className="quiz__question">
+          {question &&
+            question
+              .replace(/&#039;/g, `'`)
+              .replace(/&quot;/g, `"`)
+              .replace(/&amp;/, `&`)
+              .replace(/&eacute;/, `é`)}
+        </p>
+        <Answers />
+      </div>
+    );
+  }
 };
 
 export default Quiz;
