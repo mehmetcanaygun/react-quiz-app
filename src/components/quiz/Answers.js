@@ -3,7 +3,7 @@ import QuizContext from "../../context/quizContext";
 
 const Answers = () => {
   const quizContext = useContext(QuizContext);
-  const { currentQuestion } = quizContext;
+  const { currentQuestion, nextQuestion, countWrong } = quizContext;
   const { correct_answer, incorrect_answers } = currentQuestion;
 
   // Make an array of 4 unique numbers to place buttons in that order
@@ -18,11 +18,24 @@ const Answers = () => {
     <Fragment>
       {arr.map((item, index) => {
         return item === 0 ? (
-          <button key={index} className="quiz__answer">
+          <button
+            key={index}
+            className="quiz__answer shadow"
+            onClick={() => {
+              nextQuestion();
+            }}
+          >
             {correct_answer}
           </button>
         ) : (
-          <button key={index} className="quiz__answer">
+          <button
+            key={index}
+            className="quiz__answer shadow"
+            onClick={() => {
+              nextQuestion();
+              countWrong(currentQuestion);
+            }}
+          >
             {incorrect_answers && incorrect_answers[item - 1]}
           </button>
         );

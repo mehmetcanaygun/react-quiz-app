@@ -2,7 +2,14 @@ import React, { useReducer } from "react";
 import QuizContext from "./quizContext";
 import QuizReducer from "./quizReducer";
 import axios from "axios";
-import { GET_QUESTIONS, SET_CURRENT, SET_LOADING } from "./types";
+import {
+  GET_QUESTIONS,
+  SET_CURRENT,
+  NEXT_QUESTION,
+  COUNT_WRONG,
+  RESET_STATE,
+  SET_LOADING
+} from "./types";
 
 const QuizState = props => {
   const initialState = {
@@ -23,10 +30,6 @@ const QuizState = props => {
       `https://opentdb.com/api.php?amount=10&category=${id}&difficulty=easy&type=multiple`
     );
 
-    // res.data.results.forEach(result => {
-    //   console.log(result, state.questionIndex);
-    // });
-
     dispatch({
       type: GET_QUESTIONS,
       payload: res.data.results
@@ -39,6 +42,39 @@ const QuizState = props => {
   const setQuestion = () => {
     dispatch({
       type: SET_CURRENT
+    });
+  };
+
+  // Next question
+  const nextQuestion = () => {
+    if (state.currentIndex < 9) {
+      dispatch({
+        type: NEXT_QUESTION
+      });
+
+      setQuestion();
+    } else {
+      endQuiz();
+    }
+  };
+
+  // Count Wrong Answers
+  const countWrong = wrongAnswer => {
+    dispatch({
+      type: COUNT_WRONG,
+      payload: wrongAnswer
+    });
+  };
+
+  // End Quiz
+  const endQuiz = () => {
+    console.log("Bitti");
+  };
+
+  // Reset State
+  const resetState = () => {
+    dispatch({
+      type: RESET_STATE
     });
   };
 
@@ -59,6 +95,9 @@ const QuizState = props => {
         loading: state.loading,
         getQuestions,
         setQuestion,
+        nextQuestion,
+        countWrong,
+        resetState,
         setLoading
       }}
     >
