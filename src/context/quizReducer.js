@@ -3,6 +3,7 @@ import {
   SET_CURRENT,
   NEXT_QUESTION,
   COUNT_WRONG,
+  END_QUIZ,
   RESET_STATE,
   SET_LOADING
 } from "./types";
@@ -29,6 +30,11 @@ export default (state, action) => {
       return {
         ...state,
         wrong: [...state.wrong, action.payload]
+      };
+    case END_QUIZ:
+      return {
+        ...state,
+        endQuiz: true
       };
     case RESET_STATE:
       return {

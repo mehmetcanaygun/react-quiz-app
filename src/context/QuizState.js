@@ -7,6 +7,7 @@ import {
   SET_CURRENT,
   NEXT_QUESTION,
   COUNT_WRONG,
+  END_QUIZ,
   RESET_STATE,
   SET_LOADING
 } from "./types";
@@ -17,6 +18,7 @@ const QuizState = props => {
     currentQuestion: {},
     currentIndex: 0,
     wrong: [],
+    endQuiz: false,
     loading: false
   };
 
@@ -47,14 +49,16 @@ const QuizState = props => {
 
   // Next question
   const nextQuestion = () => {
-    if (state.currentIndex < 9) {
+    if (state.currentIndex !== 9) {
       dispatch({
         type: NEXT_QUESTION
       });
 
       setQuestion();
     } else {
-      endQuiz();
+      dispatch({
+        type: END_QUIZ
+      });
     }
   };
 
@@ -64,11 +68,6 @@ const QuizState = props => {
       type: COUNT_WRONG,
       payload: wrongAnswer
     });
-  };
-
-  // End Quiz
-  const endQuiz = () => {
-    console.log("Bitti");
   };
 
   // Reset State
@@ -92,6 +91,7 @@ const QuizState = props => {
         currentQuestion: state.currentQuestion,
         currentIndex: state.currentIndex,
         wrong: state.wrong,
+        endQuiz: state.endQuiz,
         loading: state.loading,
         getQuestions,
         setQuestion,

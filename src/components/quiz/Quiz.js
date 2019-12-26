@@ -36,7 +36,7 @@ const Quiz = ({ match }) => {
           <i className="fas fa-chevron-circle-left"></i>
         </Link>
         <p className="quiz__category">{category}</p>
-        <div className="quiz__process-bar">
+        <div className="quiz__progress-bar">
           <div style={{ width: `${currentIndex * 10 + 10}%` }}></div>
         </div>
         <p className="quiz__question">
@@ -45,7 +45,8 @@ const Quiz = ({ match }) => {
               .replace(/&#039;/g, `'`)
               .replace(/&quot;/g, `"`)
               .replace(/&amp;/, `&`)
-              .replace(/&eacute;/, `é`)}
+              .replace(/&eacute;/, `é`)
+              .replace(/&Uuml;/, `Ü`)}
         </p>
         <Answers />
       </div>
